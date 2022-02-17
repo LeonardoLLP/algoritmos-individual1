@@ -16,19 +16,17 @@ def precio_iva(p: float, iva: int):
     return p + (p * iva / 100)
 
 
-""" --- Algoritmo_2 ---
+""" --- Algoritmo_2. Consulta. (Calcula SOLAMENTE los intereses. Ambigüedad del enunciado) ---
 interes_generado(c: DECIMAL, i: ENTERO, t: ENTERO)
     # c: capital inicial
     # i: interes (en porcentaje por mes)
     # t: tiempo (en meses)
 
-variables
-    cx: DECIMAL # Capital en momento
+precondición
+    c, i, t >= 0
 
+poscondición
+    Resultado = c * (i/100) * t
 
-
-
-
-
-
+fin interes_generado
 """
