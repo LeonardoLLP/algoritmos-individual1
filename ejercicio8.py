@@ -30,3 +30,6 @@ poscondición
 
 fin interes_generado
 """
+
+def interes_generado(c: float, i: int, t: int):
+    return c * (i/100) * t
