@@ -1,5 +1,6 @@
 """ --- Algoritmo 1. Consulta. ---
 media(a: DECIMAL, b: DECIMAL, c: DECIMAL): DECIMAL
+    # a, b, c --> números reales
 
 poscondición
     Resultado = (a + b + c) / 3
@@ -13,6 +14,8 @@ def media(a: float, b: float, c: float):
 
 """ --- Algoritmo 2. Consulta.
 media_ponderada(a: DECIMAL, ap: DECIMAL, b: DECIMAL, bp: DECIMAL, c: DECIMAL, cp: DECIMAL): DECIMAL
+    # a, b, c --> números reales
+    # ap, bp, cp --> ponderaciones de dichos números
 
 precondición
     ap, bp, cp >= 0
