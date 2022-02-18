@@ -16,11 +16,15 @@ realización
         nada
     si no
         si h <= 43
-            Resultado <-- sh * (h - 35)
+            Resultado <-- (sh * 1.25) * (h - 35)
         si no  # h > 43
-            Resultado <--
+            Resultado <-- (sh * 1.50) * (h - 43) + (sh * 1.25)
 
 poscondición
+    si h <= 35
+        Resultado = 0
+    si no
+        Resultado > 0
 
-
+fin h_extra
 """
