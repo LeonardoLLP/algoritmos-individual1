@@ -1,7 +1,7 @@
 # Algoritmos 1
 I hate pandas.
 
-[Dirección del repositorio](https://github.com/LeonardoLLP/algoritmos-individual1)
+[Dirección del repositorio](https://github.com/LeonardoLLP/algoritmos-individual1)  
 [Leonardo Luque Paganelli](https://github.com/LeonardoLLP)
 
 Los algoritmos quedan explicados con comentarios. En general, no se ha usado más que la teoría de la primera página, pero para el Algoritmo 11 se ha hecho uso de la alternativa, además de para comprobar que las precondiciones de los algoritmos de cumplen antes de ejecutarlos.
