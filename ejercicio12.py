@@ -20,3 +20,10 @@ algoritmo retirar (comando)
 
 fin CUENTA
 """
+
+class CUENTA:
+    def __init__(self, c: int) -> "Capital":
+        self.c = c
+
+    def retirar(self, r):
+        self.c -= r
