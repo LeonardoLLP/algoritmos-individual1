@@ -37,6 +37,8 @@ tipo CUENTA_AVANZADA
 
 variables
     c: ENTERO  # Capital en la cuenta
+    aut: BOOLEAN  # Posibilidad de hacer un descubierto?
+
 
 algoritmo retirar (comando)
 
@@ -48,6 +50,7 @@ algoritmo retirar (comando)
 
     precondición
         c > 0
+        OR aut
 
     poscondición
         c = antiguo(c) - r
@@ -56,8 +59,15 @@ fin CUENTA
 """
 
 class CUENTA_AVANZADA:
-    def __init__(self, c: int):
+    def __init__(self, c: int, aut: bool):
         self.c = c
+        self.aut = aut
 
     def retirar(self, r):
-        self.c -= r
+        if self.c > 0:
+            self.c -= r
+        elif self.aut:
+            self.c -= r
+            self.aut = False
+        else:
+            raise ValueError("Capital must be greater than cero.")
