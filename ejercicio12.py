@@ -22,7 +22,7 @@ fin CUENTA
 """
 
 class CUENTA:
-    def __init__(self, c: int) -> "Capital":
+    def __init__(self, c: int):
         self.c = c
 
     def retirar(self, r):
