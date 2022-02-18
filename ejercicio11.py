@@ -6,7 +6,7 @@ h_extra(h: ENTERO, sm: ENTERO): DECIMAL
 
 precondición
     h >= 8
-    s > 0
+    sm > 0
 
 variables
     sh: DECIMAL <-- (sm * 12) / (52 * 35)  # Salario por hora
@@ -30,6 +30,12 @@ fin h_extra
 """
 
 def h_extra(h: int, sm: int):
+    if h < 8:
+        raise ValueError("Working hours must be equal or above 8.")
+    elif sm <= 0:
+        raise ValueError("Salary must be greater than cero.")
+
+
     sh = (sm * 12) / (52 * 35)
 
     if h <= 35:
