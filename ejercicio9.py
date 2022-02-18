@@ -27,4 +27,7 @@ fin media_ponderada
 """
 
 def media_ponderada(a: float, ap: float, b: float, bp: float, c: float, cp: float):
-    return (a*ap + b*bp + c*cp) / (ap+bp+cp)
+    if ap >= 0 and bp >= 0 and cp >= 0:
+        return (a*ap + b*bp + c*cp) / (ap+bp+cp)
+    else:
+        raise ValueError("Ponderations must be equal or above cero.")
