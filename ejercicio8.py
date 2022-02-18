@@ -13,7 +13,10 @@ fin precio_iva
 """
 
 def precio_iva(p: float, iva: int):
-    return p + (p * iva / 100)
+    if p >= 0 and iva >= 0:
+        return p + (p * iva / 100)
+    else:
+        raise ValueError("Price and IVA must be equal or above cero.")
 
 
 """ --- Algoritmo_2. Consulta. (Calcula SOLAMENTE los intereses. Ambigüedad del enunciado) ---
@@ -32,4 +35,7 @@ fin interes_generado
 """
 
 def interes_generado(c: float, i: int, t: int):
-    return c * (i/100) * t
+    if c >= 0 and i >= 0 and t >= 0:
+        return c * (i/100) * t
+    else:
+        raise ValueError("Capital, interest and time must be equal or above cero.")
