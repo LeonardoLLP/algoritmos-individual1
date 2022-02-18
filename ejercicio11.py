@@ -2,7 +2,7 @@
 h_extra(h: ENTERO, sm: ENTERO): DECIMAL
     # h: Horas de la semana
     # sm: Salario mensual
-    # Este algoritmo devuelve el importe de las horas extra a pagar en una semana
+    # Este algoritmo devuelve SOLAMENTE el importe de las horas extra a pagar en una semana
 
 precondición
     h >= 8
@@ -13,7 +13,7 @@ variables
 
 realización
     si h <= 35
-        nada
+        Resultado <-- 0
     si no
         si h <= 43
             Resultado <-- (sh * 1.25) * (h - 35)
@@ -33,7 +33,7 @@ def h_extra(h: int, sm: int):
     sh = (sm * 12) / (52 * 35)
 
     if h <= 35:
-        pass
+        return 0
     else:
         if h <= 43:
             return (sh * 1.25) * (h - 35)
