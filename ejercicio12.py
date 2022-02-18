@@ -55,7 +55,7 @@ algoritmo retirar (comando)
     poscondición
         c = antiguo(c) - r
 
-fin CUENTA
+fin CUENTA_AVANZADA
 """
 
 class CUENTA_AVANZADA:
